@@ -8,7 +8,7 @@ python encode_face.py --dataset dataset --encodings encodings.pickle
 ```
 in the terminal with the right directory and environment activated.
 
-## For running the face recognition.py file:
+## For running the face recognition script:
 run  
 ```bash 
 python recognize_faces_image.py --encodings encodings.pickle --image examples/example_1.jpg
