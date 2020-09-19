@@ -32,5 +32,8 @@ pip install <package_name>
 
 * Before installing the dlib, make sure you have [CMake](https://cmake.org/) installed on your system.
 
+## Contributing
+Pull requests are welcome. As I'm also in the learning phase, any review or change will be appreciated. Also be sure to raise a issue for any change.
+
 ## License
 [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
