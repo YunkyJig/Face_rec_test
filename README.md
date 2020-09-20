@@ -1,5 +1,7 @@
 # Face_Recognition using openCV-python, dlib and face_recognition
- Using python face_recognition package and openCV for face detection of Jurassic Park characters.
+Using python face_recognition package and openCV for face detection of Jurassic Park characters. The project is influenced by this wonderful [tutorial](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/) on Face Recognition with openCV and Deep learning by [Adrian Rosebrock](https://github.com/jrosebr1).
+
+Also, this is just a learning project and the code is not being used by me for any monetary or tutorial purposes. 
 
 ## For generating the encodings file:
 run 
@@ -32,8 +34,14 @@ pip install <package_name>
 
 * Before installing the dlib, make sure you have [CMake](https://cmake.org/) installed on your system.
 
-## Contributing
-Pull requests are welcome. As I'm also in the learning phase, any review or change will be appreciated. Also be sure to raise a issue for any change.
+## Dataset 
+All images for dataset and examples are collected by me using a chrome extension, which can be downloaded from [here](https://chrome.google.com/webstore/detail/ifipmflagepipjokmbdecpmjbibjnakm).
 
 ## License
-[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+[PyImageSerch](https://www.pyimagesearch.com/faqs/single-faq/what-is-the-code-license-associated-with-your-examples/)
+
+
+## Reference 
+A major part of project is taken from a blog by [Adrian Rosebrock](https://github.com/jrosebr1) on [PyimageSearch](https://www.pyimagesearch.com/).
+
+The referenced tutorial on Face Recognition with openCV and Deep Learning can be found [here](https://www.pyimagesearch.com/).
