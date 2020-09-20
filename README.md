@@ -38,7 +38,7 @@ pip install <package_name>
 All images for dataset and examples are collected by me using a chrome extension, which can be downloaded from [here](https://chrome.google.com/webstore/detail/ifipmflagepipjokmbdecpmjbibjnakm).
 
 ## License
-[PyImageSerch](https://www.pyimagesearch.com/faqs/single-faq/what-is-the-code-license-associated-with-your-examples/)
+[PyImageSearch](https://www.pyimagesearch.com/faqs/single-faq/what-is-the-code-license-associated-with-your-examples/)
 
 
 ## Reference 
