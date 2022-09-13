@@ -5,7 +5,7 @@ import cv2
 import random
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-e", "--encodings", required=True, help="path to serialized db of facial encodings")
+# ap.add_argument("-e", "--encodings", required=True, help="path to serialized db of facial encodings")
 ap.add_argument("-i", "--image", required=True, help="path to input image")
 ap.add_argument("-d", "--detection-method", type=str, default="hog", help="face detection model to use: either `hog` or `cnn`")
 args = vars(ap.parse_args())
@@ -38,17 +38,18 @@ for encoding in encodings:
 			name = max(counts, key=counts.get)
 			# update the list of names
 		names.append(name)
-
+print('names', names)
 # loop over the recognized faces
 for ((top, right, bottom, left), name) in zip(boxes, names):
 	cv2.rectangle(image, (left, top), (right, bottom), (255, 255, 0), 2)
 	y = (top - 15 if top - 15 > 15 else top + 15)
 	cv2.putText(image, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,0.75, (255, 255, 0), 2)
 # show the output image
-cv2.imshow("Image", image)
-k=cv2.waitKey(0)
+print('showing image')
+# cv2.imshow("Image", image)
+# k=cv2.waitKey(0)
 
-if k == ord('s'): # wait for 's' key to save and exit
-	a=random.randint(0,99)
-	cv2.imwrite(f"Sample_{a}.jpg", image)
-	cv2.destroyAllWindows()
+# if k == ord('s'): # wait for 's' key to save and exit
+a=random.randint(0,99)
+cv2.imwrite(f"Sample_{a}.jpg", image)
+cv2.destroyAllWindows()
